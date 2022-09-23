@@ -10,4 +10,4 @@ By Reza Mirjahanian
 - `npm run test-watch` - Runs tests(nodemon).
 - `npm run coverage` - Runs code coverage.
 
-sequelize,MYSQL
+Codility

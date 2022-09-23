@@ -23,7 +23,6 @@
 //     (3, 2, 2, 3, 2)
 //     (3, 2, 2, 4, 2)
 
-
 // module.exports = (N, A) => {
 //   let counters = Array(N).fill(0);
 //   //take care of the case when there is no element === N+1
