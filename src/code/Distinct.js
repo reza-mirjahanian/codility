@@ -23,5 +23,5 @@ module.exports = (A) => {
   //
   // return count;
   const distinct = new Set(A);
-  return distinct.size
+  return distinct.size;
 };
