@@ -21,7 +21,7 @@ module.exports = (A) => {
   const table = {};
 
   for (const num of A) {
-    if (num > A.length){
+    if (num > A.length) {
       return 0;
     }
 
