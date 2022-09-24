@@ -1,4 +1,3 @@
-
 module.exports = (S) => {
   var opens = 0;
   var closes = 0;
@@ -6,8 +5,7 @@ module.exports = (S) => {
   for (const item of S) {
     if (item === '(') {
       opens++;
-    }
-    else if (item === ')') {
+    } else if (item === ')') {
       closes++;
     }
 
