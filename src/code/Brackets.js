@@ -6,26 +6,26 @@
 //     For example, the string "{[()()]}" is properly nested but "([)()]" is not.
 
 module.exports = (S) => {
-    let buffer = [];
-    let opens = '([{';
-    let closes = ')]}';
+  let buffer = [];
+  let opens = '([{';
+  let closes = ')]}';
 
-    for (const item of S) {
-        if (opens.indexOf(item) > -1) {
-            buffer.push(item);
-            continue;
-        }
-        if (!buffer.length) {
-            return 0;
-        }
-        if (closes.indexOf(item) !== opens.indexOf(buffer.pop())) {
-            return 0;
-        }
+  for (const item of S) {
+    if (opens.indexOf(item) > -1) {
+      buffer.push(item);
+      continue;
     }
-
     if (!buffer.length) {
-        return 1;
+      return 0;
     }
+    if (closes.indexOf(item) !== opens.indexOf(buffer.pop())) {
+      return 0;
+    }
+  }
 
-    return 0;
+  if (!buffer.length) {
+    return 1;
+  }
+
+  return 0;
 };
